@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta content="text/html; charset=iso-8859-2" http-equiv="Content-Type">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.mySlides {display:none;}
+body {
+  margin: 0;
+}
+
+/* Style the header */
+.header {
+  background-color: #f1f1f1;
+  padding: 20px;
+  text-align: center;
+}
+h2{text-align:center;font-family:Broadway;background-color:orange}
+
+        ul li {
+            display: inline-block
+        }
+
+        ul {
+            list-style-type: none;
+        }
+
+        h2 {
+            padding-top: 10px;
+            
+        }
+
+        .card{
+            margin-top: 60px;
+            margin-left: 60px
+        }
+
+        .card:hover {
+            cursor: pointer;
+            transform: scale(1.05);
+            transition: 1s;
+        }
+
+        div p {
+            text-align: center;
+        }
+        .navbar {
+            background-color: maroon;
+        }
+        .nav-text {
+            color: white;
+            text-decoration: none;
+            padding-left: 2cm;
+        }
+        .nav-text:hover{
+            color: white;
+        }
+        
+
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+#section1 {
+  height: 600px;
+  
+  
+}
+
+#section2 {
+  height: 600px;
+  
+  
+}
+
+div.gallery {
+  border: 1px solid #ccc;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.responsive {
+  padding: 0 6px;
+  float: left;
+  width: 50%;
+}
+
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+.footer {
+  background-color:white;
+  padding: 10px;
+  text-align: center;
+}
+h2{ background-color:black;
+  color: white; text-align: center;font-family="Goudy Stout"}
+}
+
+a{text-align:center;
+color:red;
+}
+
+</style>
+</head>
+<body>
+<nav class="navbar">
+        <div class="container-fluid">
+            <ul>
+                <li>
+                    <a style="padding-left: 0;" class="nav-text" href="home2.html">Home</a>
+                </li>
+                <li>
+                    <a class="nav-text" href="#section2">Select location</a>
+                </li>
+                <li>
+                    <a class="nav-text" href="/home/sunbeam/Desktop/Explore_India/Help (1).html">Help</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+<div class="header">
+  <Marquee><h1>Click the Select location in text bar to search the places</h1></marquee>
+</div>
+<div class="main" id="section1">
+  
+<h2 class="w3-center"><u>WELCOME  TO INDIA</u></h2>
+
+<div class="w3-content w3-section" >
+
+<img class="mySlides" src="https://www.99images.com/photos/wallpapers/travel-world/india%20android-iphone-desktop-hd-backgrounds-wallpapers-1080p-4k-bfmok.jpg?v=1615798884" width="1200" height="500"
+style="padding-right:5cm;">
+
+  <img class="mySlides" src="https://wallpaperaccess.com/full/1386038.jpg" width="1200" height="500"
+style="padding-right:5cm;">
+ 
+  <img class="mySlides" src="https://static2.tripoto.com/media/filter/tst/img/2953/TripDocument/5615880929_a407ab7957_b.jpg" width="1200" height="500" style="padding-right:5cm;">
+<img class="mySlides" src="https://wallpaper.dog/large/5482541.jpg" width="1200" height="500"style="padding-right:5cm;">
+
+<img class="mySlides" src="https://i.ytimg.com/vi/82bPwndF-J0/maxresdefault.jpg" width="1200" height="500"style="padding-right:5cm;">
+
+<img class="mySlides" src="https://t4.ftcdn.net/jpg/02/68/06/03/360_F_268060371_nFgoQQSnlBxODiV4pDpfq5vqXeavzisd.jpg" width="1200" height="500"style="padding-right:5cm;">
+
+<img class="mySlides" src="https://i2.wp.com/zeeoii.com/wp-content/uploads/2020/07/4K-Nature-Meadows-Wallpapers-3840X2160-19-1.jpg?fit=3840%2C2160&ssl=1" width="1200" height="500"style="padding-right:5cm;">
+
+<img class="mySlides" src="https://i.ytimg.com/vi/2SjWraA4Wro/maxresdefault.jpg" width="1200" height="500"style="padding-right:5cm;">
+</div>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+</script>
+
+</div>
+
+<div class="main" id="section2">
+  <h2>Select The section</h2>
+<h4 align="center">Choose The Location</h4><br>
+
+<div class="responsive">
+  <div class="gallery">
+    <a  href="/home/sunbeam/Desktop/Explore_India/section_east.html">
+      <img src="https://i.ytimg.com/vi/wGIuS_ZY7pc/maxresdefault.jpg" alt="east" width="600" height="400">
+    </a>
+    <div class="desc">East India</div>
+  </div>
+</div>
+
+
+<div class="responsive">
+  <div class="gallery">
+    <a href="/home/sunbeam/Desktop/Explore_India/section_west (1).html">
+      <img src="https://c4.wallpaperflare.com/wallpaper/309/350/339/people-india-architecture-mumbai-wallpaper-preview.jpg" alt="west" width="600" height="400">
+    </a>
+    <div class="desc">West India</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a  href="/home/sunbeam/Desktop/Explore_India/south.html">
+      <img src="https://wallpapercave.com/wp/wp7181381.jpg" alt="south" width="600" height="400">
+    </a>
+    <div class="desc">South India</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a  href="/home/sunbeam/Desktop/Explore_India/north.html">
+      <img src="https://c4.wallpaperflare.com/wallpaper/839/1000/912/world-1920x1080-taj-mahal-taj-wallpaper-preview.jpg" alt="north" width="600" height="400">
+    </a>
+    <div class="desc">North India</div>
+  </div>
+</div>
+</div>
+
+  <center><a href="#section1"><h5>home</h5><center></a>
+
+  
+  
+</body>
+</html>
